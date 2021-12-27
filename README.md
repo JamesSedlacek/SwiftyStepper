@@ -24,10 +24,26 @@ pod 'SwiftyStepper'
 - Xcode 13.0
 
 ## Usage
-Coming Soon!
+Add a UIView to your Storyboard. <br>
+Change the 'class' to 'SwiftyStepper'. <br>
+Customize within the Attributes Inspector. <br>
+Create & connect the IBAction for valueChanged. <br>
+
+```swift
+import UIKit
+import SwiftyStepper
+
+class ViewController: UIViewController {
+  @IBAction func stepperValueChanged(_ sender: SwiftyStepper) {
+      print("Value Changed to: \(sender.value)")
+  }
+}
+```
+
 
 ## Customize
 
+Attributes Inspector: <br> <br>
 <img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/Designables.png?raw=true">
 
 ## Author
