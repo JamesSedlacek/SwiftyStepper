@@ -1,0 +1,6 @@
+framework module Pods_SwiftyStepper_Example {
+  umbrella header "Pods-SwiftyStepper_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

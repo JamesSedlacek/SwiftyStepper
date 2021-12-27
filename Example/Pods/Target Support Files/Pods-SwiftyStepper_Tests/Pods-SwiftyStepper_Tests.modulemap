@@ -1,0 +1,6 @@
+framework module Pods_SwiftyStepper_Tests {
+  umbrella header "Pods-SwiftyStepper_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
