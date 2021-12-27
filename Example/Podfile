@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'SwiftyStepper_Example' do
+  pod 'SwiftyStepper', :path => '../'
+
+  target 'SwiftyStepper_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
