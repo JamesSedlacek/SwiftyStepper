@@ -65,10 +65,25 @@ class ViewController: UIViewController {
 ```
 <br>
 
+## Contribution
+Want to contribute? Here's what's on the TODO list:<br>
+
+- [x] GIF Example
+- [x] Usage Images 
+- [ ] Documentation
+- [ ] Tests
+- [ ] SPM Support
+- [ ] Carthage Support
+- [ ] Shadows
+- [ ] Vertical & Horizontal Modes
+- [ ] Long Press Buttons
+- [ ] Animations
+
 ## Author
 
 JamesSedlacek, jsedlacekjr@gmail.com
 
 ## License
 
-SwiftyStepper is available under the MIT license. See the LICENSE file for more info.
+SwiftyStepper is available under the MIT license. <br>
+See the LICENSE file for more info.
