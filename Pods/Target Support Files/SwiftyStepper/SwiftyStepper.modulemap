@@ -1,0 +1,6 @@
+framework module SwiftyStepper {
+  umbrella header "SwiftyStepper-umbrella.h"
+
+  export *
+  module * { export * }
+}

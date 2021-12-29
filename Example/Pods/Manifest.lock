@@ -1,5 +1,5 @@
 PODS:
-  - SwiftyStepper (0.1.0)
+  - SwiftyStepper (1.0.0)
 
 DEPENDENCIES:
   - SwiftyStepper (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftyStepper: 3eed832620611a8bd8b721300183c0da118a3309
+  SwiftyStepper: 26abb82d80b5bb20f4d370f243c0a7a4c9ddedaf
 
-PODFILE CHECKSUM: 2f6d4425837a3e8924753ac120b854bab290c29d
+PODFILE CHECKSUM: ab0752ac80290481b51078c99e02706ba2f50af0
 
 COCOAPODS: 1.11.2
