@@ -1,10 +1,9 @@
 # SwiftyStepper
 
-[![CI Status](https://img.shields.io/travis/JamesSedlacek/SwiftyStepper.svg?style=flat)](https://travis-ci.org/JamesSedlacek/SwiftyStepper)
 [![Version](https://img.shields.io/cocoapods/v/SwiftyStepper.svg?style=flat)](https://cocoapods.org/pods/SwiftyStepper)
 [![License](https://img.shields.io/cocoapods/l/SwiftyStepper.svg?style=flat)](https://cocoapods.org/pods/SwiftyStepper)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftyStepper.svg?style=flat)](https://cocoapods.org/pods/SwiftyStepper)
-
+<img src="https://img.shields.io/badge/swift-5.0-orange.svg" alt="swift 5.0 badge" />
 <br>
 
 <img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/SwiftyStepperGif.gif?raw=true">
@@ -13,9 +12,11 @@
 
 ## Installation
 
-SwiftyStepper is available through [CocoaPods](https://cocoapods.org). <br>
-
-1. Download CocoaPods<br>
+<details>
+  <summary><strong>CocoaPods</strong></summary>
+<br>
+  
+1. Download [CocoaPods](https://cocoapods.org)<br>
 2. Run 'Pod init'
 3. Add the following line to your Podfile:<br>
 ```ruby
@@ -23,6 +24,29 @@ pod 'SwiftyStepper'
 ```
 4. Run 'Pod install'<br>
 5. Open the XCWorkspace file that was created<br>
+</details>
+
+<details>
+  <summary><strong>Carthage</strong></summary>
+  <br>
+  Coming Soon!
+  <br>
+</details>
+
+<details>
+  <summary><strong>Swift Package Manager</strong></summary>
+  <br>
+  Coming Soon!
+  <br>
+</details>
+
+<details>
+  <summary><strong>Manually</strong></summary>
+  <br>
+  Copy & paste these <a href="https://github.com/JamesSedlacek/SwiftyStepper/tree/master/Classes">Files</a> into your project.
+  <br>
+</details>
+
 
 ## Requirements
 - iOS 15.0
@@ -30,29 +54,44 @@ pod 'SwiftyStepper'
 - Xcode 13.0
 
 ## Usage
-1. Add a UIView to your Storyboard. <br>
 
-<img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/AddView.png?raw=true">
-<br>
+<details>
+  <summary><strong>1. Add a UIView to your Storyboard.</strong></summary>
+  <br>
 
-
-2. Change the UIView's Class to 'SwiftyStepper'. <br>
-
-<img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/ChangeClass.png?raw=true">
-<br>
+  <img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/AddView.png?raw=true">
+  <br>
+</details>
 
 
-3. Add Constraints. <br>
+<details>
+  <summary><strong>2. Change the UIView's Class to 'SwiftyStepper'.</strong></summary>
+  <br>
 
-<img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/Constraints.png?raw=true">
-<br>
+  <img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/ChangeClass.png?raw=true">
+  <br>
+</details>
 
+<details>
+  <summary><strong>3. Add Constraints.</strong></summary>
+  <br>
 
-4. Customize within the Attributes Inspector. <br>
-<img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/Designables.png?raw=true">
-<br>
+  <img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/Constraints.png?raw=true">
+  <br>
 
-5. Create & connect the IBAction for valueChanged. <br>
+</details>
+
+<details>
+  <summary><strong>4. Customize within the Attributes Inspector.</strong></summary>
+  <br>
+  <img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/Designables.png?raw=true">
+  <br>
+</details>
+
+<details>
+  <summary><strong>5. Create & connect the IBAction for valueChanged.</strong></summary>
+  <br>
+  
 ```swift
 import UIKit
 import SwiftyStepper
@@ -63,7 +102,9 @@ class ViewController: UIViewController {
   }
 }
 ```
-<br>
+  <br>
+</details>
+
 
 ## Contribution
 Want to contribute? Here's what's on the TODO list:<br>
@@ -78,6 +119,8 @@ Want to contribute? Here's what's on the TODO list:<br>
 - [ ] Vertical & Horizontal Modes
 - [ ] Long Press Buttons
 - [ ] Animations
+- [ ] SwiftUI Support
+- [ ] Programmatic UIKit initializer
 
 ## Author
 
