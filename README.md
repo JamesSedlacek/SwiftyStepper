@@ -5,20 +5,24 @@
 [![License](https://img.shields.io/cocoapods/l/SwiftyStepper.svg?style=flat)](https://cocoapods.org/pods/SwiftyStepper)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftyStepper.svg?style=flat)](https://cocoapods.org/pods/SwiftyStepper)
 
-## Examples
+<br>
 
 <img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/SwiftyStepperGif.gif?raw=true">
-<br><br>
+<br>
 <img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/StepperExample.png?raw=true">
 
 ## Installation
 
-SwiftyStepper is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+SwiftyStepper is available through [CocoaPods](https://cocoapods.org). <br>
 
+1. Download CocoaPods<br>
+2. Run 'Pod init'
+3. Add the following line to your Podfile:<br>
 ```ruby
 pod 'SwiftyStepper'
 ```
+4. Run 'Pod install'<br>
+5. Open the XCWorkspace file that was created<br>
 
 ## Requirements
 - iOS 15.0
@@ -26,11 +30,29 @@ pod 'SwiftyStepper'
 - Xcode 13.0
 
 ## Usage
-Add a UIView to your Storyboard. <br>
-Change the 'class' to 'SwiftyStepper'. <br>
-Customize within the Attributes Inspector. <br>
-Create & connect the IBAction for valueChanged. <br>
+1. Add a UIView to your Storyboard. <br>
 
+<img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/AddView.png?raw=true">
+<br>
+
+
+2. Change the UIView's Class to 'SwiftyStepper'. <br>
+
+<img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/ChangeClass.png?raw=true">
+<br>
+
+
+3. Add Constraints. <br>
+
+<img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/Constraints.png?raw=true">
+<br>
+
+
+4. Customize within the Attributes Inspector. <br>
+<img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/Designables.png?raw=true">
+<br>
+
+5. Create & connect the IBAction for valueChanged. <br>
 ```swift
 import UIKit
 import SwiftyStepper
@@ -41,12 +63,7 @@ class ViewController: UIViewController {
   }
 }
 ```
-
-
-## Customize
-
-Attributes Inspector: <br> <br>
-<img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/Designables.png?raw=true">
+<br>
 
 ## Author
 
