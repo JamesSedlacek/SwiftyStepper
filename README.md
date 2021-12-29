@@ -1,14 +1,16 @@
-# SwiftyStepper
+<p align="center">
+  <img src = "https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/SwiftyStepperBannerLogo.png?raw=true" height=250 width=500>
+  <br><br>
 
-[![Version](https://img.shields.io/cocoapods/v/SwiftyStepper.svg?style=flat)](https://cocoapods.org/pods/SwiftyStepper)
-[![License](https://img.shields.io/cocoapods/l/SwiftyStepper.svg?style=flat)](https://cocoapods.org/pods/SwiftyStepper)
-[![Platform](https://img.shields.io/cocoapods/p/SwiftyStepper.svg?style=flat)](https://cocoapods.org/pods/SwiftyStepper)
-<img src="https://img.shields.io/badge/swift-5.0-orange.svg" alt="swift 5.0 badge" />
-<br>
-
-<img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/SwiftyStepperGif.gif?raw=true">
-<br>
-<img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/StepperExample.png?raw=true">
+  <img src="https://img.shields.io/cocoapods/v/SwiftyStepper.svg?style=flat" alt="Version" /> 
+  <img src="https://img.shields.io/badge/swift-5.0-orange.svg" alt="swift 5.0 badge" />
+  <img src="https://img.shields.io/badge/platform-iOS-lightgrey.svg" alt="platform iOS badge" />
+  <img src="https://img.shields.io/badge/license-MIT-black.svg" alt="license MIT badge" /> 
+  <br><br><br>
+  <img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/SwiftyStepperGif.gif?raw=true">
+  <br><br>
+  <img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/StepperExample.png?raw=true">
+</p>
 
 ## Installation
 
