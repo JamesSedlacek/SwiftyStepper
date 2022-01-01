@@ -114,7 +114,7 @@ Want to contribute? Here's what's on the TODO list:<br>
 - [x] GIF Example
 - [x] Usage Images 
 - [x] Banner Image 
-- [ ] Documentation
+- [x] Documentation
 - [ ] Tests
 - [ ] SPM Support
 - [ ] Carthage Support
