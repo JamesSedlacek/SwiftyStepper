@@ -46,7 +46,6 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8B8A161AD575A4F8B9770752 /* Pods-SwiftyStepper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyStepper_Example.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyStepper_Example/Pods-SwiftyStepper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A585E077277CDF9F0022141D /* SwiftyStepper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyStepper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A585E07B277CE2250022141D /* SwiftyStepper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyStepper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A585E082277CE87D0022141D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A585E090277CF5B00022141D /* SwiftyStepper */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftyStepper; path = ../../Pods/SwiftyStepper; sourceTree = "<group>"; };
 		C42547FA9890A0AEBCC4A71C /* Pods-SwiftyStepper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyStepper_Example.release.xcconfig"; path = "Target Support Files/Pods-SwiftyStepper_Example/Pods-SwiftyStepper_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,7 +159,6 @@
 		D5292D04EE667B971EFCFA4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A585E07B277CE2250022141D /* SwiftyStepper.framework */,
 				A585E077277CDF9F0022141D /* SwiftyStepper.framework */,
 				1B74FA0F3DB74F78AFDC99BF /* Pods_SwiftyStepper_Example.framework */,
 				C96807A830DA998D83B10083 /* Pods_SwiftyStepper_Tests.framework */,

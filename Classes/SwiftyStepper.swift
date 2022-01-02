@@ -170,13 +170,13 @@ import UIKit
     /// Returns an object initialized from data in a given unarchiver.
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        nibSetup()
+        xibSetup()
     }
     
     /// Initializes and returns a newly allocated view object with the specified frame rectangle.
     override init(frame: CGRect) {
         super.init(frame: frame)
-        nibSetup()
+        xibSetup()
     }
     
     // TODO: initializer for creating programmatically
