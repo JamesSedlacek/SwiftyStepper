@@ -115,7 +115,7 @@ Want to contribute? Here's what's on the TODO list:<br>
 - [x] Usage Images 
 - [x] Banner Image 
 - [x] Documentation
-- [ ] Tests
+- [x] Unit Tests
 - [ ] SPM Support
 - [ ] Carthage Support
 - [ ] Shadows
