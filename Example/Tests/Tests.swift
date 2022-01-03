@@ -3,26 +3,30 @@ import SwiftyStepper
 
 class Tests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testDefaultValues() {
+        let stepper = SwiftyStepper()
+        XCTAssert(stepper.value == 0)
+        XCTAssert(stepper.maximumValue == 1)
+        XCTAssert(stepper.minimumValue == 0)
+        XCTAssert(stepper.stepValue == 0.1)
+        XCTAssert(stepper.decimalPlaces == 1)
+        XCTAssert(stepper.borderWidth == 1)
+        XCTAssert(stepper.buttonPadding == 10)
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testCountLabelText() {
+        let stepper = SwiftyStepper()
+        
+        stepper.decimalPlaces = 0
+        stepper.value = 5
+        XCTAssert(stepper.countLabelText == "5")
+        
+        stepper.decimalPlaces = 1
+        stepper.value = 5.3
+        XCTAssert(stepper.countLabelText == "5.3")
+        
+        stepper.decimalPlaces = 2
+        stepper.value = 5.46
+        XCTAssert(stepper.countLabelText == "5.46")
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

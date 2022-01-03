@@ -50,9 +50,9 @@
 		4E0BE78F181B9CBFBB8FF3A6C8C9FCBD /* SwiftyStepper.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SwiftyStepper.xib; sourceTree = "<group>"; };
 		52908F429DE005BD58972F6A7A2F4801 /* SwiftyStepper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyStepper-umbrella.h"; sourceTree = "<group>"; };
 		52BEDB61B304E9BA08F2F92A41090539 /* SwiftyStepper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyStepper.debug.xcconfig; sourceTree = "<group>"; };
-		53F1B2C21962180F090F5314A268B808 /* Pods-SwiftyStepper_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SwiftyStepper_Tests"; path = Pods_SwiftyStepper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F1B2C21962180F090F5314A268B808 /* Pods_SwiftyStepper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyStepper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		542E815E13D9826ECBD1443FA95229C0 /* Pods-SwiftyStepper_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftyStepper_Example-dummy.m"; sourceTree = "<group>"; };
-		5861CE7D2AB1067AEF6754D899C7BA01 /* Pods-SwiftyStepper_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SwiftyStepper_Example"; path = Pods_SwiftyStepper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5861CE7D2AB1067AEF6754D899C7BA01 /* Pods_SwiftyStepper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyStepper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D8BAEC5CDF346883E79A8415E9C99A9 /* Pods-SwiftyStepper_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftyStepper_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5F49CF09A8143EF72469144EC44DC27B /* Pods-SwiftyStepper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyStepper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		65DBC8338B5DD3FB1E52B6483356B8DF /* Pods-SwiftyStepper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftyStepper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -195,8 +195,8 @@
 		8CFB543734D41CF68E6E08A293C520D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5861CE7D2AB1067AEF6754D899C7BA01 /* Pods-SwiftyStepper_Example */,
-				53F1B2C21962180F090F5314A268B808 /* Pods-SwiftyStepper_Tests */,
+				5861CE7D2AB1067AEF6754D899C7BA01 /* Pods_SwiftyStepper_Example.framework */,
+				53F1B2C21962180F090F5314A268B808 /* Pods_SwiftyStepper_Tests.framework */,
 				FFF4308EFB98C4DB9B9542C4B404D01D /* SwiftyStepper */,
 			);
 			name = Products;
@@ -309,7 +309,7 @@
 			);
 			name = "Pods-SwiftyStepper_Tests";
 			productName = Pods_SwiftyStepper_Tests;
-			productReference = 53F1B2C21962180F090F5314A268B808 /* Pods-SwiftyStepper_Tests */;
+			productReference = 53F1B2C21962180F090F5314A268B808 /* Pods_SwiftyStepper_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		53640A9EFF7DE8A64C417180B32D2717 /* SwiftyStepper */ = {
@@ -346,7 +346,7 @@
 			);
 			name = "Pods-SwiftyStepper_Example";
 			productName = Pods_SwiftyStepper_Example;
-			productReference = 5861CE7D2AB1067AEF6754D899C7BA01 /* Pods-SwiftyStepper_Example */;
+			productReference = 5861CE7D2AB1067AEF6754D899C7BA01 /* Pods_SwiftyStepper_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -664,7 +664,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SwiftyStepper_Tests/Pods-SwiftyStepper_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -701,7 +701,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SwiftyStepper_Tests/Pods-SwiftyStepper_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -739,7 +739,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SwiftyStepper_Example/Pods-SwiftyStepper_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -777,7 +777,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SwiftyStepper_Example/Pods-SwiftyStepper_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

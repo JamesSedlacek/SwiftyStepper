@@ -13,7 +13,7 @@ import UIKit
  SwiftyStepper has a plus and minus button for incrementing and decrementing it's value.
  The value is displayed in the middle of the two buttons.
  */
-@IBDesignable open class SwiftyStepper: UIControl {
+@IBDesignable public final class SwiftyStepper: UIControl {
     
     // MARK: - Properties
     
@@ -33,6 +33,13 @@ import UIKit
                 sendActions(for: .valueChanged)
             }
         }
+    }
+    
+    /// The Text for the countLabel
+    ///  This is a get-only property
+    ///  The default value for this property is "0.0"
+    public var countLabelText: String {
+        return countLabel.text ?? "0.0"
     }
     
     /// The highest possible value for the stepper.
@@ -140,19 +147,19 @@ import UIKit
     
     // MARK: - IBOutlets
     
-    private var view: UIView!
-    @IBOutlet private weak var countLabel: UILabel!
-    @IBOutlet private weak var minusButton: UIButton!
-    @IBOutlet private weak var plusButton: UIButton!
-    @IBOutlet private weak var plusButtonPadding: NSLayoutConstraint!
-    @IBOutlet private weak var minusButtonPadding: NSLayoutConstraint!
+    internal var view: UIView!
+    @IBOutlet internal weak var countLabel: UILabel!
+    @IBOutlet internal weak var minusButton: UIButton!
+    @IBOutlet internal weak var plusButton: UIButton!
+    @IBOutlet internal weak var plusButtonPadding: NSLayoutConstraint!
+    @IBOutlet internal weak var minusButtonPadding: NSLayoutConstraint!
     
     // MARK: - IBActions
     
     /// This is the action for the plus button
     /// The value is incremented if it is less than the maximumValue property
     /// - Parameter sender: Plus UIButton
-    @IBAction private func plusTapped(_ sender: UIButton) {
+    @IBAction internal func plusTapped(_ sender: UIButton) {
         if value + stepValue > maximumValue { return }
         value += stepValue
     }
@@ -160,7 +167,7 @@ import UIKit
     /// This is the action for the minus button
     /// The value is decremented if it is greater than the minimumValue property
     /// - Parameter sender: Minus UIButton
-    @IBAction private func minusTapped(_ sender: UIButton) {
+    @IBAction internal func minusTapped(_ sender: UIButton) {
         if value - stepValue < minimumValue { return }
         value -= stepValue
     }
@@ -182,7 +189,7 @@ import UIKit
     // TODO: initializer for creating programmatically
     
     /// Called when a designable object is created in Interface Builder
-    open override func prepareForInterfaceBuilder() {
+    public override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         xibSetup()
         view.prepareForInterfaceBuilder()
@@ -193,7 +200,7 @@ import UIKit
     }
     
     /// This is used for setting the cornerRadius of the view
-    open override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         layer.cornerRadius = self.frame.height / 2
     }
