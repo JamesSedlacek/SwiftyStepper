@@ -15,14 +15,30 @@ import UIKit
  */
 @IBDesignable public final class SwiftyStepper: UIControl {
     
-    // MARK: - Properties
+    // MARK: - Haptics
+    
+    /// This property enables haptic feedback when tapping on the buttons
+    ///  The default value for this property is true
+    @IBInspectable public var isHapticsEnabled: Bool = true
+    
+    public var hapticStyle: UIImpactFeedbackGenerator.FeedbackStyle = .light
+    public var hapticIntensity: CGFloat = 1.0
+    
+    private func hapticsHandler() {
+        if isHapticsEnabled {
+            UIImpactFeedbackGenerator(style: hapticStyle)
+                .impactOccurred(intensity: hapticIntensity)
+        }
+    }
+    
+    // MARK: - Value
     
     /**
-            The numeric value of the stepper.
+     The numeric value of the stepper.
      
-            When the value changes, the stepper sends the UIControlEventValueChanged flag to its target (see addTarget:action:forControlEvents:).
+     When the value changes, the stepper sends the UIControlEventValueChanged flag to its target (see addTarget:action:forControlEvents:).
      
-            The default value for this property is 0.
+     The default value for this property is 0.
      */
     @IBInspectable public var value: Double = 0 {
         didSet {
@@ -33,13 +49,6 @@ import UIKit
                 sendActions(for: .valueChanged)
             }
         }
-    }
-    
-    /// The Text for the countLabel
-    ///  This is a get-only property
-    ///  The default value for this property is "0.0"
-    public var countLabelText: String {
-        return countLabel.text ?? "0.0"
     }
     
     /// The highest possible value for the stepper.
@@ -59,53 +68,66 @@ import UIKit
     ///  The default value for this property is 1
     @IBInspectable public var decimalPlaces: Int = 1
     
+    // MARK: - Border
+    
     /// The width of the border for the stepper
     ///  The default value for this property is 1
     @IBInspectable public var borderWidth: CGFloat = 1 {
-       didSet {
-           layer.borderWidth = borderWidth
-       }
+        didSet {
+            layer.borderWidth = borderWidth
+        }
     }
     
     /// The color of the border for the stepper
     ///  The default value for this property is `secondaryLabel`
     @IBInspectable public var borderColor: UIColor = UIColor.secondaryLabel {
-       didSet {
-           layer.borderColor = borderColor.cgColor
-       }
+        didSet {
+            layer.borderColor = borderColor.cgColor
+        }
+    }
+    
+    // MARK: - Label
+    
+    /// The Text for the countLabel
+    ///  This is a get-only property
+    ///  The default value for this property is "0.0"
+    public var countLabelText: String {
+        return countLabel.text ?? "0.0"
     }
     
     /// The color of the label in the center of the stepper
     ///  The default value for this property is `label`
     @IBInspectable public var labelColor: UIColor = UIColor.label {
-       didSet {
-           if let countLabel = countLabel {
-               countLabel.textColor = labelColor
-           }
-       }
+        didSet {
+            if let countLabel = countLabel {
+                countLabel.textColor = labelColor
+            }
+        }
     }
     
     /// The font of the label in the center of the stepper
     ///  The default value for this property is `systemFont(ofSize: 25, weight: .semibold)`
     @IBInspectable public var labelFont: UIFont = UIFont.systemFont(ofSize: 25,
                                                                     weight: .semibold) {
-       didSet {
-           if let countLabel = countLabel {
-               countLabel.font = labelFont
-           }
-       }
+        didSet {
+            if let countLabel = countLabel {
+                countLabel.font = labelFont
+            }
+        }
     }
+    
+    // MARK: - Buttons
     
     /// The color of the plus and minus buttons in the stepper
     ///  The default value for this property is `secondaryLabel`
     @IBInspectable public var buttonColor: UIColor = UIColor.secondaryLabel {
-       didSet {
-           if let minusButton = minusButton,
-              let plusButton = plusButton {
-               minusButton.tintColor = buttonColor
-               plusButton.tintColor = buttonColor
-           }
-       }
+        didSet {
+            if let minusButton = minusButton,
+               let plusButton = plusButton {
+                minusButton.tintColor = buttonColor
+                plusButton.tintColor = buttonColor
+            }
+        }
     }
     
     /// The weight of the plus and minus buttons in the stepper
@@ -138,7 +160,7 @@ import UIKit
     @IBInspectable public var buttonPadding: CGFloat = 10 {
         didSet {
             if let plusButtonPadding = plusButtonPadding,
-            let minusButtonPadding = minusButtonPadding {
+               let minusButtonPadding = minusButtonPadding {
                 plusButtonPadding.constant = buttonPadding
                 minusButtonPadding.constant = buttonPadding
             }
@@ -162,6 +184,7 @@ import UIKit
     @IBAction internal func plusTapped(_ sender: UIButton) {
         if value + stepValue > maximumValue { return }
         value += stepValue
+        hapticsHandler()
     }
     
     /// This is the action for the minus button
@@ -170,6 +193,7 @@ import UIKit
     @IBAction internal func minusTapped(_ sender: UIButton) {
         if value - stepValue < minimumValue { return }
         value -= stepValue
+        hapticsHandler()
     }
     
     // MARK: - Initializers
@@ -193,9 +217,6 @@ import UIKit
         super.prepareForInterfaceBuilder()
         xibSetup()
         view.prepareForInterfaceBuilder()
-        if let countLabel = countLabel {
-            countLabel.text = String(format: "%.\(decimalPlaces)f", value)
-        }
         setNeedsDisplay()
     }
     
@@ -203,6 +224,9 @@ import UIKit
     public override func layoutSubviews() {
         super.layoutSubviews()
         layer.cornerRadius = self.frame.height / 2
+        if let countLabel = countLabel {
+            countLabel.text = String(format: "%.\(decimalPlaces)f", value)
+        }
     }
     
     // MARK: - Xib

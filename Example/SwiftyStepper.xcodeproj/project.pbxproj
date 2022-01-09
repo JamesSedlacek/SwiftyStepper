@@ -532,6 +532,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 280C254141E2A3E1FA7782EA /* Pods-SwiftyStepper_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = TUYS5TF5HK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -558,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2318A284E9ACEA630F5A296A /* Pods-SwiftyStepper_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = TUYS5TF5HK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
