@@ -116,16 +116,17 @@ Want to contribute? Here's what's on the TODO list:<br>
 - [x] Banner Image 
 - [x] Documentation
 - [x] Unit Tests
+- [x] Haptics
+- [ ] Vertical & Horizontal Modes
+- [ ] Shadows
+- [ ] Animations
+- [ ] Sound
+- [ ] Long Press Buttons
+- [ ] Programmatic UIKit initializer
+- [ ] Programmatic Customization Code Snippet
 - [ ] SPM Support
 - [ ] Carthage Support
-- [ ] Shadows
-- [ ] Vertical & Horizontal Modes
-- [ ] Long Press Buttons
-- [ ] Animations
 - [ ] SwiftUI Support
-- [ ] Programmatic UIKit initializer
-- [ ] Haptics
-- [ ] Sound
 
 ## Author
 
