@@ -1,5 +1,7 @@
 <p align="center">
   <img src = "https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/SwiftyStepperBannerLogo.png?raw=true" height=250 width=500>
+  <br>
+  <img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/StepperExample.png?raw=true">
   <br><br>
 
   <img src="https://img.shields.io/cocoapods/v/SwiftyStepper.svg?style=flat" alt="Version" /> 
@@ -7,9 +9,8 @@
   <img src="https://img.shields.io/badge/platform-iOS-lightgrey.svg" alt="platform iOS badge" />
   <img src="https://img.shields.io/badge/license-MIT-black.svg" alt="license MIT badge" /> 
   <br><br><br>
-  <img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/SwiftyStepperGif.gif?raw=true">
+  <img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/SwiftyDemo.gif?raw=true">
   <br><br>
-  <img src="https://github.com/JamesSedlacek/SwiftyStepper/blob/master/SwiftyStepper/Assets/StepperExample.png?raw=true">
 </p>
 
 ## Installation
@@ -117,7 +118,7 @@ Want to contribute? Here's what's on the TODO list:<br>
 - [x] Documentation
 - [x] Unit Tests
 - [x] Haptics
-- [ ] Vertical & Horizontal Modes
+- [x] Vertical & Horizontal Modes
 - [ ] Shadows
 - [ ] Animations
 - [ ] Sound
