@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L15-JP-wxP">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -16,17 +16,11 @@
                         <viewControllerLayoutGuide type="bottom" id="ofP-nY-12S"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7T2-ly-Um5">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SwiftyStepper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwb-Fc-5IB">
-                                <rect key="frame" x="88.666666666666686" y="89" width="251" height="48"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ah-Ks-1A1" customClass="SwiftyStepper" customModule="SwiftyStepper">
-                                <rect key="frame" x="80" y="787" width="268" height="60"/>
+                                <rect key="frame" x="80" y="757" width="254" height="60"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="ajl-bm-vEY"/>
@@ -36,7 +30,7 @@
                                         <color key="value" systemColor="secondaryLabelColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="labelColor">
-                                        <color key="value" systemColor="labelColor"/>
+                                        <color key="value" systemColor="systemGreenColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
                                         <color key="value" systemColor="systemIndigoColor"/>
@@ -62,6 +56,11 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHapticsEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isVerticalModeEnabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonSize">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="stepperValueChanged:" destination="bLc-7x-ajZ" eventType="valueChanged" id="Ihx-b1-0fj"/>
@@ -69,52 +68,170 @@
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC7-8n-gIG">
-                                <rect key="frame" x="122.00000000000001" y="741" width="184.33333333333337" height="30"/>
+                                <rect key="frame" x="115.00000000000001" y="711" width="184.33333333333337" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5de-dP-OOJ">
-                                <rect key="frame" x="40" y="663" width="168" height="42"/>
+                                <rect key="frame" x="40" y="633" width="168" height="42"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kS-wt-m9x">
-                                <rect key="frame" x="305" y="669" width="83" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kS-wt-m9x">
+                                <rect key="frame" x="291" y="639" width="83" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0M-M9-L9W" customClass="SwiftyStepper" customModule="SwiftyStepper">
+                                <rect key="frame" x="324" y="373" width="50" height="150"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Pg8-NQ-5eD"/>
+                                    <constraint firstAttribute="height" constant="150" id="t99-bB-GgW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isVerticalModeEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="decimalPlaces">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="stepValue">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="labelColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="verticalValueChanged:" destination="L15-JP-wxP" eventType="valueChanged" id="EOB-4j-6Pe"/>
+                                </connections>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cnf-dd-oEg">
+                                <rect key="frame" x="40" y="394" width="168" height="108"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ud-iE-6rb">
+                                        <rect key="frame" x="0.0" y="0.0" width="168" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYK-YH-whn">
+                                        <rect key="frame" x="42.666666666666671" y="72" width="83" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SwiftyStepperBannerLogo" translatesAutoresizingMaskIntoConstraints="NO" id="wt9-6v-7f9">
+                                <rect key="frame" x="0.0" y="43.999999999999986" width="414" height="220.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wt9-6v-7f9" secondAttribute="height" multiplier="15:8" id="Epm-E0-kbP"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9h-ND-1N0">
+                                <rect key="frame" x="0.0" y="272.66666666666669" width="414" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vertical Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYW-Ut-IhT">
+                                        <rect key="frame" x="113.00000000000001" y="15" width="188.33333333333337" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstItem="JYW-Ut-IhT" firstAttribute="centerY" secondItem="t9h-ND-1N0" secondAttribute="centerY" id="QNj-O6-8pg"/>
+                                    <constraint firstAttribute="height" constant="60" id="Sje-a9-HXv"/>
+                                    <constraint firstItem="JYW-Ut-IhT" firstAttribute="centerX" secondItem="t9h-ND-1N0" secondAttribute="centerX" id="kdh-PR-bRW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1EG-SL-SKh">
+                                <rect key="frame" x="0.0" y="555" width="414" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horizontal Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4c-ff-JUI">
+                                        <rect key="frame" x="97.666666666666671" y="15" width="218.66666666666663" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="CKV-e9-ArA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstItem="w4c-ff-JUI" firstAttribute="centerY" secondItem="1EG-SL-SKh" secondAttribute="centerY" id="6AG-wo-KsI"/>
+                                    <constraint firstAttribute="height" constant="60" id="k6Y-0j-NTp"/>
+                                    <constraint firstItem="w4c-ff-JUI" firstAttribute="centerX" secondItem="1EG-SL-SKh" secondAttribute="centerX" id="x64-io-dSU"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9Ah-Ks-1A1" firstAttribute="top" secondItem="gC7-8n-gIG" secondAttribute="bottom" constant="16" id="0Tf-2p-JiZ"/>
+                            <constraint firstItem="wt9-6v-7f9" firstAttribute="top" secondItem="bNk-cO-teA" secondAttribute="bottom" id="1Ha-FV-2h9"/>
+                            <constraint firstItem="cnf-dd-oEg" firstAttribute="leading" secondItem="7T2-ly-Um5" secondAttribute="leadingMargin" constant="20" id="1og-Ud-ufq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2kS-wt-m9x" secondAttribute="trailing" constant="20" id="33f-t9-kk7"/>
                             <constraint firstItem="9Ah-Ks-1A1" firstAttribute="leading" secondItem="7T2-ly-Um5" secondAttribute="leadingMargin" constant="60" id="49n-eM-XWc"/>
                             <constraint firstItem="gC7-8n-gIG" firstAttribute="top" secondItem="5de-dP-OOJ" secondAttribute="bottom" constant="36" id="AYP-M2-Idv"/>
+                            <constraint firstItem="1EG-SL-SKh" firstAttribute="leading" secondItem="7T2-ly-Um5" secondAttribute="leading" id="C4a-Pc-7hY"/>
                             <constraint firstItem="gC7-8n-gIG" firstAttribute="centerX" secondItem="7T2-ly-Um5" secondAttribute="centerX" id="GZZ-jh-iqj"/>
+                            <constraint firstAttribute="trailing" secondItem="1EG-SL-SKh" secondAttribute="trailing" id="INi-d9-Ttu"/>
                             <constraint firstItem="5de-dP-OOJ" firstAttribute="leading" secondItem="7T2-ly-Um5" secondAttribute="leadingMargin" constant="20" id="Ils-m8-rT1"/>
+                            <constraint firstItem="wt9-6v-7f9" firstAttribute="leading" secondItem="7T2-ly-Um5" secondAttribute="leading" id="Q6e-to-o2r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d0M-M9-L9W" secondAttribute="trailing" constant="20" id="U4u-RK-Cd7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9Ah-Ks-1A1" secondAttribute="trailing" constant="60" id="WMi-Wu-Fbb"/>
-                            <constraint firstItem="Mwb-Fc-5IB" firstAttribute="centerX" secondItem="7T2-ly-Um5" secondAttribute="centerX" id="alw-S0-Dq6"/>
-                            <constraint firstItem="Mwb-Fc-5IB" firstAttribute="top" secondItem="bNk-cO-teA" secondAttribute="bottom" constant="45" id="d0j-RP-p42"/>
+                            <constraint firstItem="cnf-dd-oEg" firstAttribute="centerY" secondItem="7T2-ly-Um5" secondAttribute="centerY" id="WbW-el-aWb"/>
+                            <constraint firstItem="d0M-M9-L9W" firstAttribute="centerY" secondItem="7T2-ly-Um5" secondAttribute="centerY" id="XIO-G8-4Kd"/>
+                            <constraint firstAttribute="trailing" secondItem="wt9-6v-7f9" secondAttribute="trailing" id="ZnS-Gv-lWe"/>
+                            <constraint firstItem="t9h-ND-1N0" firstAttribute="leading" secondItem="7T2-ly-Um5" secondAttribute="leading" id="ejF-88-Oqb"/>
                             <constraint firstItem="ofP-nY-12S" firstAttribute="top" secondItem="9Ah-Ks-1A1" secondAttribute="bottom" constant="45" id="k7P-32-6Iz"/>
+                            <constraint firstItem="5de-dP-OOJ" firstAttribute="top" secondItem="1EG-SL-SKh" secondAttribute="bottom" constant="18" id="ldD-qG-UCg"/>
                             <constraint firstItem="gC7-8n-gIG" firstAttribute="top" secondItem="2kS-wt-m9x" secondAttribute="bottom" constant="36" id="rwZ-4W-J4A"/>
+                            <constraint firstItem="t9h-ND-1N0" firstAttribute="top" secondItem="wt9-6v-7f9" secondAttribute="bottom" constant="8" id="wdl-8i-8we"/>
+                            <constraint firstAttribute="trailing" secondItem="t9h-ND-1N0" secondAttribute="trailing" id="zrn-84-duc"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="totalPriceLabel" destination="2kS-wt-m9x" id="6m2-tv-KO5"/>
+                        <outlet property="verticalPriceLabel" destination="DYK-YH-whn" id="Ynu-dF-sUz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2wv-Cv-W26" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="bLc-7x-ajZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="104" y="108"/>
+            <point key="canvasLocation" x="102.89855072463769" y="107.8125"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <image name="SwiftyStepperBannerLogo" width="6912" height="3456"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
@@ -122,8 +239,14 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0F3401D72DD61B42FFAB8D093B94968C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		1313F1E6E045822CE0149673AAD95672 /* SwiftyStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B76D246E3D84E2170C2305FBE3B65AD /* SwiftyStepper.swift */; };
 		51259CF39570591094ADC8B9BD415C4D /* Pods-SwiftyStepper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 158F8810261155625426074191F50A37 /* Pods-SwiftyStepper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5E3EF3220E7DA60BA41F673EC5288CBF /* SwiftyStepper.xib in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BE78F181B9CBFBB8FF3A6C8C9FCBD /* SwiftyStepper.xib */; };
 		93E77747F5125464FF221ED63A7514BB /* Pods-SwiftyStepper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 542E815E13D9826ECBD1443FA95229C0 /* Pods-SwiftyStepper_Example-dummy.m */; };
+		A571D563278E7BFB00F32A25 /* SwiftyStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D9162794A972DDB500758280B1AB3 /* SwiftyStepper.swift */; };
 		B308E1B1E5CDE1623E5AC34103328F40 /* Pods-SwiftyStepper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6E59A6CEB9CC77DF05A3C2976F39E0 /* Pods-SwiftyStepper_Tests-dummy.m */; };
 		D10159D9BA4B49D2FD16A8BB7BB74F8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		F539B37E57C3441B2C6A874126EDB791 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -47,7 +46,7 @@
 		1B76D246E3D84E2170C2305FBE3B65AD /* SwiftyStepper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftyStepper.swift; sourceTree = "<group>"; };
 		276E961A3B06E7649739B809C92D19E4 /* Pods-SwiftyStepper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyStepper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		45B4C3B1C3062FE941E6B312B711A13D /* SwiftyStepper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyStepper-prefix.pch"; sourceTree = "<group>"; };
-		4E0BE78F181B9CBFBB8FF3A6C8C9FCBD /* SwiftyStepper.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SwiftyStepper.xib; sourceTree = "<group>"; };
+		4E0BE78F181B9CBFBB8FF3A6C8C9FCBD /* HorizontalStepper.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = HorizontalStepper.xib; sourceTree = "<group>"; };
 		52908F429DE005BD58972F6A7A2F4801 /* SwiftyStepper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyStepper-umbrella.h"; sourceTree = "<group>"; };
 		52BEDB61B304E9BA08F2F92A41090539 /* SwiftyStepper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyStepper.debug.xcconfig; sourceTree = "<group>"; };
 		53F1B2C21962180F090F5314A268B808 /* Pods_SwiftyStepper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyStepper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,8 +62,8 @@
 		82C7720A02CEF949CF7D8007809126E3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8ACC5A69E490E05D6D6B404DCC7CB143 /* Pods-SwiftyStepper_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftyStepper_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8D6E59A6CEB9CC77DF05A3C2976F39E0 /* Pods-SwiftyStepper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftyStepper_Tests-dummy.m"; sourceTree = "<group>"; };
-		9AAA1DEE9FFF2BC1EEFBB12579A7F179 /* SwiftyStepper.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SwiftyStepper.xib; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A53EBC38278B90300066A591 /* VerticalStepper.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerticalStepper.xib; sourceTree = "<group>"; };
 		AA3AD2366361D292201D780A75FC666A /* SwiftyStepper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyStepper.modulemap; sourceTree = "<group>"; };
 		B40D9162794A972DDB500758280B1AB3 /* SwiftyStepper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftyStepper.swift; sourceTree = "<group>"; };
 		B592F26DA931E2C6852852961C5481B4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -187,7 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				1B76D246E3D84E2170C2305FBE3B65AD /* SwiftyStepper.swift */,
-				4E0BE78F181B9CBFBB8FF3A6C8C9FCBD /* SwiftyStepper.xib */,
+				4E0BE78F181B9CBFBB8FF3A6C8C9FCBD /* HorizontalStepper.xib */,
+				A53EBC38278B90300066A591 /* VerticalStepper.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -258,7 +258,6 @@
 			isa = PBXGroup;
 			children = (
 				B40D9162794A972DDB500758280B1AB3 /* SwiftyStepper.swift */,
-				9AAA1DEE9FFF2BC1EEFBB12579A7F179 /* SwiftyStepper.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -423,10 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1313F1E6E045822CE0149673AAD95672 /* SwiftyStepper.swift in Sources */,
-				1313F1E6E045822CE0149673AAD95672 /* SwiftyStepper.swift in Sources */,
-				5E3EF3220E7DA60BA41F673EC5288CBF /* SwiftyStepper.xib in Sources */,
-				5E3EF3220E7DA60BA41F673EC5288CBF /* SwiftyStepper.xib in Sources */,
+				A571D563278E7BFB00F32A25 /* SwiftyStepper.swift in Sources */,
 				FBBBCC6D6EC71D58E7AEB0C2E5D7885B /* SwiftyStepper-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

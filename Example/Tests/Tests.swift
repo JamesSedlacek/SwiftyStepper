@@ -29,4 +29,6 @@ class Tests: XCTestCase {
         stepper.value = 5.46
         XCTAssert(stepper.countLabelText == "5.46")
     }
+    
+    // TODO: test Vertical & Horizontal Modes
 }
